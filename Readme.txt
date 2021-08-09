@@ -1,3 +1,16 @@
+15 puzzle solving algorithm, using 6 different search methods and reports statistics when a solution is founnd
+
+Program accepts command line arguments in format:
+     "[initialstate]" [algorithm] [options]
+        - initialstate must contain all characters:
+                   "123456789ABCDEF " in any order
+        - algorithm can be any of the following:
+                    BFS, DFS, DLS, ID, GBFS, A*
+        - options can be any of the following:
+                    int value for DLS
+         'h1' or 'h2' for GBFS or AStar
+
+
 
 How to run 15puzzle.py:
 	Example: 	python 15puzzle.py "6D7A89B F2C5E314" GBFS h2
@@ -10,8 +23,8 @@ For each of the search algorithms:
 	DLS	<num_depth>
 
 GBFS and A* can take either h1 or h2 as their arguments for the heuristic
-	- Ôh1Õ is the heuristic for the sum of tiles misplaced from the solution
-	- Ôh2Õ is the manhattan distance 
+	- Ã”h1Ã• is the heuristic for the sum of tiles misplaced from the solution
+	- Ã”h2Ã• is the manhattan distance 
 
 DLS takes a number for the maximum depth to reach
 	
